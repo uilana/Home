@@ -14,7 +14,9 @@
 <body>
     <header class="header">
         <div class="header__inner">
-            <input class="header__button" type="button" name="" value="Дома" id=""> <img src="image/Arrow.svg" alt="">
+            <div class="button__container">
+                <input class="header__button" type="button" name="" value="Дома" id=""> <img src="image/Arrow.svg" alt="">
+            </div>
             <ul class="dropDown">
                 <li class="dropDown__item">
                     <p class="dropDown__text">Дача</p> <img class="dropDown__img" src="image/pen.svg" alt=""></li>
@@ -22,35 +24,37 @@
                     <p class="dropDown__text">Сарай</p> <img class="dropDown__img" src="image/pen.svg" alt=""></li>
             </ul>
             <div class="logo__container">
-                <img class="logo" src="q" alt="">
+                <img class="logo" src="image/logo.svg" alt="">
             </div>
             <div class="profile">
                 <a class="profile__link" href="profile.html">
-                    <img class="profile__img" src="q" alt="">
+                    <img class="profile__img" src="image/prof.svg" alt="">
                     <h3 class="profile__title">Профиль</h3>
                 </a>
             </div>
         </div>
     </header>
-    <nav class="nav">
-        <div class="nav__inner">
-            <a class="nav__item nav__item_active" href="room.html">комнаты</a>
-            <a class="nav__item" href="scripts.html">сценарии</a>
-            <a class="nav__item" href="Security.html">охрана</a>
+    <div class="contanier">
+        <div class="sensors">
+            <p class="sensors__text">У вас нет датчиков</p>
+            <a class="sensors__link" href=""><img class="sensors__img" src="image/plus-sensors.svg" alt=""></a>
         </div>
-    </nav>
-    <main class="main">
-        <div class="main__inner">
-            <div class="sensors">
-                <p class="sensors__text">У вас нет датчиков</p>
-                <a class="sensors__link" href=""><img class="sensors__img" src="image/plus-sensors.svg" alt=""></a>
+        <main class="main">
+            <div class="main__inner">
+                <nav class="nav">
+                    <div class="nav__inner">
+                        <a class="nav__item nav__item_active" href="room.html">комнаты</a>
+                        <a class="nav__item" href="scripts.html">сценарии</a>
+                        <a class="nav__item" href="Security.html">охрана</a>
+                    </div>
+                </nav>
+                <div class="rooms">
+                    <a class="rooms__add" href=""><img class="rooms__add-img" src="image/plus-content.svg" alt=""></a>
+                    <p class="rooms__text-none">Добавте комнату</p>
+                </div>
             </div>
-            <div class="rooms">
-                <a class="rooms__add" href=""><img class="rooms__add-img" src="image/plus-content.svg" alt=""></a>
-                <p class="rooms__text-none">Добавте комнату</p>
-            </div>
-        </div>
-    </main>
+        </main>
+    </div>
 </body>
 
 </html>

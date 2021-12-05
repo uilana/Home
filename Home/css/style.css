@@ -13,6 +13,10 @@
           box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+}
+
 a {
   color: #ffffffff;
   text-decoration: none;
@@ -75,17 +79,39 @@ h3 {
   display: block;
 }
 
+.profile__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .profile__title {
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 28px;
+  margin: 10px;
+}
+
+.contanier {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .nav__inner {
   background: #4391CF;
-  padding: 0 100px;
   height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,27 +147,18 @@ h3 {
 }
 
 .main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+
+.main__inner {
   height: 100%;
 }
 
 .sensors {
   background: #4391CF;
-  position: fixed;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
 .sensors__img {
@@ -159,22 +176,6 @@ h3 {
   line-height: 28px;
 }
 
-.rooms {
-  height: 100vh;
-  width: 90vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .rooms__add-img {
   background: url(.png), -o-radial-gradient(15.32% 21.04%, 90.16% 143.01%, rgba(85, 182, 165, 0.5) 0%, rgba(110, 191, 244, 0.111979) 77.08%, rgba(70, 144, 213, 0) 100%);
   background: url(.png), radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(85, 182, 165, 0.5) 0%, rgba(110, 191, 244, 0.111979) 77.08%, rgba(70, 144, 213, 0) 100%);
@@ -184,8 +185,6 @@ h3 {
           backdrop-filter: blur(80px);
   border-radius: 15px;
   padding: 32px 65px;
-  top: 0;
-  left: 0;
 }
 
 .rooms__text-none {

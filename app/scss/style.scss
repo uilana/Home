@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+}
+
 a {
     color: #ffffffff;
     text-decoration: none;
@@ -68,19 +72,33 @@ h3 {
 }
 
 .profile {
+    &__link {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
     &__title {
         font-family: "Rubik", sans-serif;
         font-style: normal;
         font-weight: 300;
         font-size: 24px;
         line-height: 28px;
+        margin: 10px;
     }
+}
+
+.contanier {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    // grid-auto-rows: minmax(auto, 100%);
 }
 
 .nav {
     &__inner {
         background: #4391CF;
-        padding: 0 100px;
+        // padding: 0 100px;
         // width: 100vw;
         height: 10vh;
         display: flex;
@@ -109,20 +127,23 @@ h3 {
 }
 
 .main {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    // align-items: center;
+    // height: 100%;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    &__inner {
+        height: 100%;
+        // display: grid;
+        // grid-template-columns: repeat(5, 1fr);
+        // grid-template-rows: repeat(4, 1fr);
+    }
 }
 
 .sensors {
     background: #4391CF;
-    position: fixed;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    // justify-content: space-between;
-    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    // grid-auto-rows: 100%;
+    // grid-template-rows: 100%;
     &__img {
         background: rgba(85, 182, 165, 0.7);
         border: 2px solid rgba(85, 182, 165, 0.5);
@@ -139,12 +160,9 @@ h3 {
 }
 
 .rooms {
-    height: 100vh;
-    width: 90vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    // grid-column-start: 2;
+    // grid-column-end: 6;
+    // grid-auto-rows: 100fr;
     &__add-img {
         background: url(.png), radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(85, 182, 165, 0.5) 0%, rgba(110, 191, 244, 0.111979) 77.08%, rgba(70, 144, 213, 0) 100%);
         background-blend-mode: overlay, normal;
@@ -152,8 +170,6 @@ h3 {
         backdrop-filter: blur(80px);
         border-radius: 15px;
         padding: 32px 65px;
-        top: 0;
-        left: 0;
     }
     &__text-none {
         font-family: "Rubik", sans-serif;
