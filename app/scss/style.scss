@@ -1,0 +1,166 @@
+@import "vars",
+"libs",
+"fonts",
+"global",
+"media",
+"header";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #ffffffff;
+    text-decoration: none;
+}
+
+p {
+    color: #ffffffff;
+}
+
+h3 {
+    color: #ffffffff;
+}
+
+.header {
+    &__inner {
+        background: #4391CF;
+        width: 100%;
+        height: 15vh;
+        padding: 0 70px;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        list-style: none;
+        text-align: center;
+        // flex-wrap: wrap;
+        justify-content: space-between;
+        // position: fixed;
+    }
+    &__button {
+        background: #4391CF;
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 43px;
+        color: #ffffffff;
+    }
+}
+
+.dropDown {
+    text-decoration: none;
+    color: #fff;
+    &__item {
+        display: none;
+        position: fixed;
+        background: url(.png), radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(85, 182, 165, 0.5) 0%, rgba(110, 191, 244, 0.111979) 77.08%, rgba(70, 144, 213, 0) 100%);
+        background-blend-mode: overlay, normal;
+        border: 2px solid rgba(85, 182, 165, 0.5);
+        backdrop-filter: blur(80px);
+        border-radius: 5px;
+    }
+}
+
+.dropDown:hover .dropDown__item {
+    display: block;
+}
+
+.profile {
+    &__title {
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+.nav {
+    &__inner {
+        background: #4391CF;
+        padding: 0 100px;
+        // width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        // position: fixed;
+    }
+    &__item_active {
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        background-color: #ffffffff;
+        padding: 27px 130px;
+    }
+    &__item {
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    // align-items: center;
+}
+
+.sensors {
+    background: #4391CF;
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    align-items: center;
+    &__img {
+        background: rgba(85, 182, 165, 0.7);
+        border: 2px solid rgba(85, 182, 165, 0.5);
+        padding: 28px 30px;
+        border-radius: 100px;
+    }
+    &__text {
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+.rooms {
+    height: 100vh;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    &__add-img {
+        background: url(.png), radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(85, 182, 165, 0.5) 0%, rgba(110, 191, 244, 0.111979) 77.08%, rgba(70, 144, 213, 0) 100%);
+        background-blend-mode: overlay, normal;
+        border: 2px solid rgba(85, 182, 165, 0.5);
+        backdrop-filter: blur(80px);
+        border-radius: 15px;
+        padding: 32px 65px;
+        top: 0;
+        left: 0;
+    }
+    &__text-none {
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+    }
+}
