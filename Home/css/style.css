@@ -122,9 +122,8 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .nav__item_active {
@@ -157,8 +156,14 @@ h3 {
 
 .sensors {
   background: #4391CF;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.sensors__link {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
 }
 
 .sensors__img {
@@ -166,6 +171,7 @@ h3 {
   border: 2px solid rgba(85, 182, 165, 0.5);
   padding: 28px 30px;
   border-radius: 100px;
+  margin: 10px;
 }
 
 .sensors__text {
@@ -174,6 +180,17 @@ h3 {
   font-weight: 300;
   font-size: 24px;
   line-height: 28px;
+}
+
+.rooms__inner {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.rooms__add {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: 50px;
 }
 
 .rooms__add-img {
@@ -194,6 +211,43 @@ h3 {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+}
+
+.scripts__inner {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.scripts__add {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: 50px;
+}
+
+.scripts__add-img {
+  background: url(.png), -o-radial-gradient(15.32% 21.04%, 90.16% 143.01%, rgba(85, 182, 165, 0.5) 0%, rgba(110, 191, 244, 0.111979) 77.08%, rgba(70, 144, 213, 0) 100%);
+  background: url(.png), radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(85, 182, 165, 0.5) 0%, rgba(110, 191, 244, 0.111979) 77.08%, rgba(70, 144, 213, 0) 100%);
+  background-blend-mode: overlay, normal;
+  border: 2px solid rgba(85, 182, 165, 0.5);
+  -webkit-backdrop-filter: blur(80px);
+          backdrop-filter: blur(80px);
+  border-radius: 15px;
+  padding: 32px 65px;
+}
+
+.scripts__text-none {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
 }
 
 .webp .dropDown__item { background: url(.webp), -o-radial-gradient(15.32% 21.04%, 90.16% 143.01%, rgba(85, 182, 165, 0.5) 0%, rgba(110, 191, 244, 0.111979) 77.08%, rgba(70, 144, 213, 0) 100%); }
@@ -203,3 +257,7 @@ h3 {
 .webp .rooms__add-img { background: url(.webp), -o-radial-gradient(15.32% 21.04%, 90.16% 143.01%, rgba(85, 182, 165, 0.5) 0%, rgba(110, 191, 244, 0.111979) 77.08%, rgba(70, 144, 213, 0) 100%); }
 
 .webp .rooms__add-img { background: url(.webp), radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(85, 182, 165, 0.5) 0%, rgba(110, 191, 244, 0.111979) 77.08%, rgba(70, 144, 213, 0) 100%); }
+
+.webp .scripts__add-img { background: url(.webp), -o-radial-gradient(15.32% 21.04%, 90.16% 143.01%, rgba(85, 182, 165, 0.5) 0%, rgba(110, 191, 244, 0.111979) 77.08%, rgba(70, 144, 213, 0) 100%); }
+
+.webp .scripts__add-img { background: url(.webp), radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(85, 182, 165, 0.5) 0%, rgba(110, 191, 244, 0.111979) 77.08%, rgba(70, 144, 213, 0) 100%); }
