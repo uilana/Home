@@ -216,6 +216,7 @@ h3 {
           backdrop-filter: blur(80px);
   border-radius: 15px;
   padding: 32px 65px;
+  margin: 20px;
 }
 
 .rooms__text-none {
@@ -249,6 +250,7 @@ h3 {
           backdrop-filter: blur(80px);
   border-radius: 15px;
   padding: 32px 65px;
+  margin: 20px;
 }
 
 .scripts__text-none {
@@ -261,6 +263,198 @@ h3 {
   grid-row-start: 2;
   grid-row-end: 3;
   text-align: center;
+}
+
+.profileHeader__inner {
+  background: #4391CF;
+  width: 100%;
+  height: 35vh;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.profileHeader__button-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.profileHeader__title-name {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.profileHeader__title-devices {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.profileNav__inner {
+  background: #4391CF;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.profileNav__item {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profileNav__item_active {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  background-color: #ffffffff;
+}
+
+.registrationHeader__inner {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  background: #4391CF;
+  text-align: center;
+}
+
+.registrationHeader__title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.registrationMain__inner {
+  height: 100%;
+  background: #4391CF;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.input {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  border-bottom: 3px solid #FFFF;
+  width: 825px;
+  color: inherit;
+  outline: none;
+  padding: 15px;
+  background-color: #4391CF;
+}
+
+::-webkit-input-placeholder {
+  color: #FFFF;
+}
+
+.checkbox {
+  margin: 30px;
+}
+
+.checkbox__input {
+  border: 2px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.checkbox__text {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.registrationButton {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  background: rgba(85, 182, 165, 0.5);
+  border-radius: 15px;
+  padding: 30px 51px;
+  border: none;
+}
+
+.loginHeader__inner {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  background: #4391CF;
+  text-align: center;
+}
+
+.loginHeader__title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.loginMain__inner {
+  height: 100%;
+  background: #4391CF;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.loginButton {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  background: rgba(85, 182, 165, 0.5);
+  border-radius: 15px;
+  padding: 30px 51px;
+  border: none;
 }
 
 .webp .dropDown__item { background: url(.webp), -o-radial-gradient(15.32% 21.04%, 90.16% 143.01%, rgba(85, 182, 165, 0.5) 0%, rgba(110, 191, 244, 0.111979) 77.08%, rgba(70, 144, 213, 0) 100%); }

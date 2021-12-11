@@ -204,6 +204,7 @@ h3 {
         backdrop-filter: blur(80px);
         border-radius: 15px;
         padding: 32px 65px;
+        margin: 20px;
     }
     &__text-none {
         font-family: "Rubik", sans-serif;
@@ -236,6 +237,7 @@ h3 {
         backdrop-filter: blur(80px);
         border-radius: 15px;
         padding: 32px 65px;
+        margin: 20px;
     }
     &__text-none {
         font-family: "Rubik", sans-serif;
@@ -248,4 +250,179 @@ h3 {
         grid-row-end: 3;
         text-align: center;
     }
+}
+
+.profileHeader {
+    &__inner {
+        background: #4391CF;
+        width: 100%;
+        height: 35vh;
+        text-align: center;
+        padding: 25px 0;
+    }
+    &__button-close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    &__title-name {
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 43px;
+    }
+    &__title-devices {
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 43px;
+    }
+}
+
+.profileNav {
+    &__inner {
+        background: #4391CF;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__item {
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    &__item_active {
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        background-color: #ffffffff;
+    }
+}
+
+.registrationHeader {
+    &__inner {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        background: #4391CF;
+        text-align: center;
+    }
+    &__title {
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 43px;
+    }
+}
+
+.registrationMain {
+    &__inner {
+        height: 100%;
+        background: #4391CF;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.input {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+    border-bottom: 3px solid #FFFF;
+    width: 825px;
+    color: inherit;
+    outline: none;
+    padding: 15px;
+    background-color: #4391CF;
+}
+
+::-webkit-input-placeholder {
+    color: #FFFF;
+}
+
+.checkbox {
+    margin: 30px;
+    &__input {
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+    }
+    &__text {
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
+}
+
+.registrationButton {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    background: rgba(85, 182, 165, 0.5);
+    border-radius: 15px;
+    padding: 30px 51px;
+    border: none;
+}
+
+.loginHeader {
+    &__inner {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        background: #4391CF;
+        text-align: center;
+    }
+    &__title {
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 43px;
+    }
+}
+
+.loginMain {
+    &__inner {
+        height: 100%;
+        background: #4391CF;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.loginButton {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    background: rgba(85, 182, 165, 0.5);
+    border-radius: 15px;
+    padding: 30px 51px;
+    border: none;
 }
