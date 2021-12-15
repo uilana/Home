@@ -340,9 +340,26 @@ h3 {
   background-color: #ffffffff;
 }
 
+.profileMain {
+  height: 57vh;
+}
+
 .profileMain__inner {
   height: 100%;
-  text-align: center;
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .profileMain__link {
@@ -364,7 +381,38 @@ h3 {
   color: #000000;
 }
 
+.profileMain__version-contanier {
+  margin: 0 auto;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .profileMain__version {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 18vh;
+}
+
+.profileMain__version_title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.profileMain__version_text {
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -372,19 +420,17 @@ h3 {
   line-height: 21px;
   text-align: center;
   color: #000000;
-  padding: 65px;
-  background: url(../image/Group65.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 191px;
-  width: 191px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
+}
+
+.profileMain__progressBar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .profileMain__lastVersion {
@@ -395,7 +441,6 @@ h3 {
   line-height: 21px;
   text-align: center;
   color: #000000;
-  padding: 60px;
 }
 
 .profileMain__autoload-checkbox {
@@ -418,7 +463,6 @@ h3 {
   line-height: 21px;
   text-align: center;
   color: #000000;
-  padding: 5px;
 }
 
 .profileMain__checkbox {
@@ -435,7 +479,6 @@ h3 {
   line-height: 14px;
   text-align: center;
   color: #969696;
-  padding: 0 0 10px 0;
 }
 
 .profileMain__button-Updates {
@@ -450,6 +493,7 @@ h3 {
   border-radius: 15px;
   padding: 22px 11px;
   border: none;
+  max-width: 232px;
 }
 
 .registrationHeader__inner {

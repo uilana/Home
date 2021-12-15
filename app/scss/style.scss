@@ -315,9 +315,14 @@ h3 {
 }
 
 .profileMain {
+    height: 57vh;
     &__inner {
         height: 100%;
-        text-align: center;
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
     }
     &__link {
         padding: 15px;
@@ -336,7 +341,33 @@ h3 {
         line-height: 28px;
         color: #000000;
     }
+    &__version-contanier {
+        margin: 0 auto;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
     &__version {
+        align-items: center;
+        // width: 150px;
+        flex-direction: column;
+        // padding: 30px;
+        // margin-top: 50%;
+        height: 18vh;
+        // transform: translate(50%);
+    }
+    &__version_title {
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        // width: 150px;
+        // margin: 0 auto;
+        // align-items: center;
+    }
+    &__version_text {
         font-family: "Rubik", sans-serif;
         font-style: normal;
         font-weight: 300;
@@ -344,15 +375,14 @@ h3 {
         line-height: 21px;
         text-align: center;
         color: #000000;
-        padding: 65px;
-        background: url(../image/Group65.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 191px;
-        width: 191px;
-        justify-content: center;
-        align-items: center;
+        display: block;
+    }
+    &__progressBar {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
     }
     &__lastVersion {
         font-family: "Rubik", sans-serif;
@@ -362,7 +392,7 @@ h3 {
         line-height: 21px;
         text-align: center;
         color: #000000;
-        padding: 60px;
+        // padding: 60px;
     }
     &__autoload-checkbox {
         display: flex;
@@ -377,7 +407,7 @@ h3 {
         line-height: 21px;
         text-align: center;
         color: #000000;
-        padding: 5px;
+        // padding: 5px;
     }
     &__checkbox {
         border: 1px solid #000000;
@@ -391,7 +421,7 @@ h3 {
         line-height: 14px;
         text-align: center;
         color: #969696;
-        padding: 0 0 10px 0;
+        // padding: 0 0 10px 0;
     }
     &__button-Updates {
         font-family: "Rubik", sans-serif;
@@ -405,6 +435,7 @@ h3 {
         border-radius: 15px;
         padding: 22px 11px;
         border: none;
+        max-width: 232px;
     }
 }
 
