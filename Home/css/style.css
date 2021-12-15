@@ -267,7 +267,7 @@ h3 {
 .profileHeader__inner {
   background: #4391CF;
   width: 100%;
-  height: 35vh;
+  height: 33vh;
   text-align: center;
   padding: 25px 0;
 }
@@ -338,6 +338,118 @@ h3 {
   line-height: 17px;
   color: #000000;
   background-color: #ffffffff;
+}
+
+.profileMain__inner {
+  height: 100%;
+  text-align: center;
+}
+
+.profileMain__link {
+  padding: 15px;
+}
+
+.profileMain__link-sound,
+.profileMain__link-notices,
+.profileMain__link-language,
+.profileMain__link-securityParameters,
+.profileMain__link-reset,
+.profileMain__link-userAgreement,
+.profileMain__link-logout {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.profileMain__version {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+  padding: 65px;
+  background: url(../image/Group65.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 191px;
+  width: 191px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profileMain__lastVersion {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+  padding: 60px;
+}
+
+.profileMain__autoload-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profileMain__autoload_title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+  padding: 5px;
+}
+
+.profileMain__checkbox {
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.profileMain__autoload_text {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #969696;
+  padding: 0 0 10px 0;
+}
+
+.profileMain__button-Updates {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #4391CF;
+  border-radius: 15px;
+  padding: 22px 11px;
+  border: none;
 }
 
 .registrationHeader__inner {

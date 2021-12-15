@@ -19,7 +19,11 @@
             </div>
             <img class="profileHeader__img" src="image/profile.svg" alt="">
             <h3 class="profileHeader__title-name">Имя</h3>
-            <h3 class="profileHeader__title-devices">Устройства:22</h3>
+            <h3 class="profileHeader__title-devices">Устройства:
+                <span>
+                    22
+                </span>
+            </h3>
         </div>
     </header>
     <nav class="profileNav">
@@ -31,7 +35,20 @@
     </nav>
     <main class="profileMain">
         <div class="profileMain__inner">
-
+            <h3 class="profileMain__version">Текущая версия
+                <span>0.0.1</span>
+            </h3>
+            <h3 class="profileMain__lastVersion">
+                Это последняя версия
+            </h3>
+            <div class="profileMain__autoload">
+                <div class="profileMain__autoload-checkbox">
+                    <h3 class="profileMain__autoload_title">Автозагрузка</h3>
+                    <input class="profileMain__checkbox" type="checkbox">
+                </div>
+                <p class="profileMain__autoload_text">Загрузка обновлений ПО<br>только по сети Wi-fi</p>
+            </div>
+            <button class="profileMain__button-Updates">Проверка обновлений</button>
         </div>
     </main>
 </body>
