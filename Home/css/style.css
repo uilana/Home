@@ -200,10 +200,21 @@ h3 {
   display: grid;
 }
 
+.rooms__add-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .rooms__add {
   grid-row-start: 1;
   grid-row-end: 2;
-  display: inline;
+  margin: 20px;
+  width: 100%;
+  height: 100%;
+  max-width: 211px;
+  max-height: 145px;
+  display: block;
 }
 
 .rooms__add-img {
@@ -214,8 +225,9 @@ h3 {
   -webkit-backdrop-filter: blur(80px);
           backdrop-filter: blur(80px);
   border-radius: 15px;
-  margin: 20px;
   padding: 32px 65px;
+  width: 100%;
+  height: 100%;
 }
 
 .rooms__text-none {
@@ -346,7 +358,8 @@ h3 {
 
 .profileMain__inner {
   height: 100%;
-  margin-top: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,7 +413,13 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 18vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .profileMain__version_title {
@@ -421,16 +440,6 @@ h3 {
   text-align: center;
   color: #000000;
   display: block;
-}
-
-.profileMain__progressBar {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .profileMain__lastVersion {
@@ -610,6 +619,97 @@ h3 {
   border-radius: 15px;
   padding: 30px 51px;
   border: none;
+}
+
+.noticesMain {
+  height: 57vh;
+}
+
+.noticesMain__inner {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.notices {
+  height: 100%;
+  position: relative;
+  padding: 10px;
+}
+
+.notices::after {
+  content: "";
+  position: absolute;
+  border: 2px solid #000000;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+}
+
+.notices__text {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  background: rgba(67, 145, 207, 0.7);
+  border: 2px solid #4391CF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  padding: 15px 22px;
+  width: 580px;
+}
+
+.techSupport {
+  padding: 10px;
+  width: 100%;
+}
+
+.techSupport__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.techSupport__profile-title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.techSupport__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.techSupport__input-box {
+  border: 1.5px solid #4391CF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 30px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  width: 430px;
+}
+
+.techSupport__input-arrow__box {
+  background: #4391CF;
+  border-radius: 100px;
+  padding: 7px 14px;
 }
 
 .webp .dropDown__item { background: url(.webp), -o-radial-gradient(15.32% 21.04%, 90.16% 143.01%, rgba(85, 182, 165, 0.5) 0%, rgba(110, 191, 244, 0.111979) 77.08%, rgba(70, 144, 213, 0) 100%); }
