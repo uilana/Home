@@ -12,9 +12,9 @@
 </head>
 
 <body>
-    <header class="sensorDataHeader">
-        <div class="sensorDataHeader__inner">
-            <div class="sensorDataHeader__button-close">
+    <header class="sensorData__header">
+        <div class="sensorData__header-inner">
+            <div class="sensorData__button-close">
                 <a href="room.html"><img src="image/ArrowProfile.svg" alt=""></a>
             </div>
             <div class="logo__container">
@@ -22,19 +22,19 @@
             </div>
         </div>
     </header>
-    <main class="sensorDataMain">
-        <div class="sensorDataMain__inner">
+    <main class="sensorData">
+        <div class="sensorData__inner">
             <div class="sensorDataButton-container">
-                <input class="sensorData__button" type="button" name="" value="Выберете дом" id=""> <img class="sensorData__button-img" src="image/ArrowData.svg" alt="">
+                <input class="sensorData-type" id="sensorData-type" type="checkbox"><label class="sensorData__label" for="sensorData-type">Выберете дом</label><img class="sensorData__button-img" src="image/ArrowData.svg" alt="">
+                <ul class="sensorData__list">
+                    <li>
+                        <p>Дача</p>
+                    </li>
+                    <li>
+                        <p>Квартира</p>
+                    </li>
+                </ul>
             </div>
-            <ul class="sensorDataMain__list">
-                <li>
-                    <p></p>
-                </li>
-                <li>
-                    <p></p>
-                </li>
-            </ul>
             <div class="sensorDataButton-container">
                 <input class="sensorData__button" type="button" name="" value="Выберете этаж" id=""> <img class="sensorData__button-img" src="image/ArrowData.svg" alt="">
             </div>

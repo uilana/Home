@@ -13,6 +13,10 @@
           box-sizing: border-box;
 }
 
+label {
+  display: block;
+}
+
 body {
   height: 100vh;
 }
@@ -944,6 +948,9 @@ h3 {
 }
 
 .additionMain__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   background: #4391CF;
   -webkit-box-orient: vertical;
@@ -955,6 +962,7 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 20px;
 }
 
 .additionButton {
@@ -1076,7 +1084,7 @@ h3 {
   padding: 27px 119px;
 }
 
-.sensorDataHeader__inner {
+.sensorData__header-inner {
   padding: 20px;
   width: 100%;
   height: 100%;
@@ -1085,13 +1093,59 @@ h3 {
   height: 20vh;
 }
 
-.sensorDataHeader__button-close {
+.sensorData {
+  position: relative;
+}
+
+.sensorData__button-close {
   position: absolute;
   top: 30px;
   right: 30px;
 }
 
-.sensorDataMain__inner {
+.sensorData__button-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.sensorData-type {
+  opacity: 0;
+  position: absolute;
+}
+
+#sensorData-type:checked ~ .sensorData__list {
+  max-height: 100vh;
+  padding: 30px;
+}
+
+.sensorDataButton-container {
+  position: relative;
+}
+
+.sensorData__list {
+  overflow: hidden;
+  max-height: 0;
+  background: #000000;
+}
+
+.sensorData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #4391CF;
+}
+
+.sensorData__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   background: #4391CF;
   -webkit-box-orient: vertical;
@@ -1100,9 +1154,14 @@ h3 {
           flex-direction: column;
   text-align: center;
   height: 80vh;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 20vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sensorData__label {
+  background: #FFFFFF;
 }
 
 .sensorData__button {

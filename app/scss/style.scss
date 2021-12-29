@@ -4,31 +4,6 @@
 "global",
 "media",
 "header";
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    height: 100vh;
-}
-
-a {
-    color: #ffffffff;
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-}
-
-p {
-    color: #ffffffff;
-}
-
-h3 {
-    color: #ffffffff;
-}
-
 .header {
     &__inner {
         background: #4391CF;
@@ -825,12 +800,14 @@ h3 {
 
 .additionMain {
     &__inner {
+        display: flex;
         height: 100%;
         background: #4391CF;
         flex-direction: column;
         text-align: center;
         height: 70vh;
         justify-content: space-between;
+        padding: 20px;
     }
 }
 
@@ -926,8 +903,8 @@ h3 {
     padding: 27px 119px;
 }
 
-.sensorDataHeader {
-    &__inner {
+.sensorData__header {
+    &-inner {
         padding: 20px;
         width: 100%;
         height: 100%;
@@ -935,21 +912,58 @@ h3 {
         text-align: center;
         height: 20vh;
     }
+}
+
+.sensorData {
+    position: relative;
     &__button-close {
         position: absolute;
         top: 30px;
         right: 30px;
     }
+    &__button-img {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    &-type {
+        opacity: 0;
+        position: absolute;
+    }
 }
 
-.sensorDataMain {
+#sensorData-type:checked~.sensorData__list {
+    max-height: 100vh;
+    padding: 30px;
+}
+
+.sensorDataButton-container {
+    position: relative;
+}
+
+.sensorData__list {
+    overflow: hidden;
+    max-height: 0;
+    background: #000000;
+}
+
+.sensorData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4391CF;
     &__inner {
+        display: flex;
         height: 100%;
         background: #4391CF;
         flex-direction: column;
         text-align: center;
         height: 80vh;
-        justify-content: space-between;
+        width: 20vw;
+        justify-content: center;
+    }
+    &__label {
+        background: #FFFFFF;
     }
 }
 
