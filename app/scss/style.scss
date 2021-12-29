@@ -155,6 +155,8 @@ h3 {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     overflow: auto;
+    scrollbar-color: #4391CF #FFFFFF;
+    scrollbar-width: auto;
     &__link {
         grid-row-start: 2;
         grid-row-end: 3;
@@ -180,6 +182,24 @@ h3 {
         // grid-row-start: 2;
         // grid-row-end: 3;
     }
+}
+
+.sensors::-webkit-scrollbar {
+    width: 20px;
+    // background: #4391CF;
+    // padding: 5px;
+}
+
+.sensors::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 100px;
+}
+
+.sensors::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+    background-color: #4391CF;
 }
 
 .rooms {
@@ -473,6 +493,7 @@ h3 {
         height: 100%;
         background: #4391CF;
         text-align: center;
+        height: 30vh;
     }
     &__title {
         font-family: "Rubik", sans-serif;
@@ -489,6 +510,7 @@ h3 {
         background: #4391CF;
         flex-direction: column;
         text-align: center;
+        height: 70vh;
     }
 }
 
@@ -547,6 +569,7 @@ h3 {
         height: 100%;
         background: #4391CF;
         text-align: center;
+        height: 40vh;
     }
     &__title {
         font-family: "Rubik", sans-serif;
@@ -559,11 +582,21 @@ h3 {
 
 .loginMain {
     &__inner {
+        display: flex;
         height: 100%;
         background: #4391CF;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
+        height: 60vh;
+        justify-content: space-between;
+        padding: 20px;
     }
+}
+
+.input-box {
+    margin: 20px;
 }
 
 .loginButton {
@@ -686,6 +719,7 @@ h3 {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    border-top: 1px solid #FFFFFF;
     &__link {
         display: flex;
         flex-direction: column;
@@ -706,6 +740,30 @@ h3 {
         border-radius: 12px;
         padding: 33px 64px;
     }
+    &__text {
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        color: #000000;
+    }
+    &__warning {
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+        background: #FA0000;
+        border-radius: 20px;
+        padding-right: 8px;
+        padding-left: 8px;
+    }
 }
 
 .security {
@@ -713,6 +771,7 @@ h3 {
         display: flex;
         justify-content: space-between;
         margin: 10px;
+        border-bottom: 2px solid #000000;
     }
     &__box {
         display: flex;
@@ -739,4 +798,184 @@ h3 {
         font-size: 14px;
         line-height: 17px;
     }
+}
+
+.additionHeader {
+    &__inner {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        background: #4391CF;
+        text-align: center;
+        height: 30vh;
+    }
+    &__button-close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    &__title {
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 43px;
+    }
+}
+
+.additionMain {
+    &__inner {
+        height: 100%;
+        background: #4391CF;
+        flex-direction: column;
+        text-align: center;
+        height: 70vh;
+        justify-content: space-between;
+    }
+}
+
+.additionButton {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    background: rgba(85, 182, 165, 0.5);
+    border-radius: 15px;
+    border: none;
+    padding: 27px 119px;
+}
+
+.searchHeader {
+    &__inner {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        background: #4391CF;
+        text-align: center;
+        height: 40vh;
+    }
+    &__button-close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    &__title {
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 43px;
+    }
+}
+
+.searchMain {
+    &__inner {
+        display: flex;
+        height: 100%;
+        background: #4391CF;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 60vh;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    &__progress {
+        background: #4391CF;
+        border: 2px solid #FFFFFF;
+        border-radius: 15px;
+        border-radius: 100px;
+        align-items: center;
+        padding: 0.5px;
+        display: flex;
+        height: 40px;
+        width: 500px;
+        text-align: center;
+    }
+    &__progress-value {
+        animation: load 3s normal forwards;
+        border-radius: 100px;
+        background: #fff;
+        height: 30px;
+        width: 0;
+    }
+}
+
+@keyframes load {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 99%;
+    }
+}
+
+.searchButton {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    background: rgba(85, 182, 165, 0.5);
+    border-radius: 15px;
+    border: none;
+    padding: 27px 119px;
+}
+
+.sensorDataHeader {
+    &__inner {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        background: #4391CF;
+        text-align: center;
+        height: 20vh;
+    }
+    &__button-close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+}
+
+.sensorDataMain {
+    &__inner {
+        height: 100%;
+        background: #4391CF;
+        flex-direction: column;
+        text-align: center;
+        height: 80vh;
+        justify-content: space-between;
+    }
+}
+
+.sensorData__button {
+    background: #ffffff;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    border: none;
+    // &-img {
+    //     background: #ffffff;
+    // }
+}
+
+.sensorData-button {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    background: rgba(85, 182, 165, 0.5);
+    border-radius: 15px;
+    border: none;
+    padding: 27px 119px;
 }

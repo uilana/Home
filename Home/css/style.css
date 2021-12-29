@@ -173,6 +173,8 @@ h3 {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   overflow: auto;
+  scrollbar-color: #4391CF #FFFFFF;
+  scrollbar-width: auto;
 }
 
 .sensors__link {
@@ -195,6 +197,22 @@ h3 {
   font-weight: 300;
   font-size: 24px;
   line-height: 28px;
+}
+
+.sensors::-webkit-scrollbar {
+  width: 20px;
+}
+
+.sensors::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  border-radius: 100px;
+}
+
+.sensors::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: 5px solid transparent;
+  background-clip: content-box;
+  background-color: #4391CF;
 }
 
 .rooms__inner {
@@ -524,6 +542,7 @@ h3 {
   height: 100%;
   background: #4391CF;
   text-align: center;
+  height: 30vh;
 }
 
 .registrationHeader__title {
@@ -542,6 +561,7 @@ h3 {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  height: 70vh;
 }
 
 .input {
@@ -601,6 +621,7 @@ h3 {
   height: 100%;
   background: #4391CF;
   text-align: center;
+  height: 40vh;
 }
 
 .loginHeader__title {
@@ -612,13 +633,31 @@ h3 {
 }
 
 .loginMain__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%;
   background: #4391CF;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
+  height: 60vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+.input-box {
+  margin: 20px;
 }
 
 .loginButton {
@@ -769,6 +808,7 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 20px;
+  border-top: 1px solid #FFFFFF;
 }
 
 .sensor__link {
@@ -804,6 +844,36 @@ h3 {
   padding: 33px 64px;
 }
 
+.sensor__text {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: #000000;
+}
+
+.sensor__warning {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #000000;
+  background: #FA0000;
+  border-radius: 20px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
 .security__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -812,6 +882,7 @@ h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 10px;
+  border-bottom: 2px solid #000000;
 }
 
 .security__box {
@@ -847,6 +918,215 @@ h3 {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
+}
+
+.additionHeader__inner {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  background: #4391CF;
+  text-align: center;
+  height: 30vh;
+}
+
+.additionHeader__button-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.additionHeader__title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.additionMain__inner {
+  height: 100%;
+  background: #4391CF;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 70vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.additionButton {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  background: rgba(85, 182, 165, 0.5);
+  border-radius: 15px;
+  border: none;
+  padding: 27px 119px;
+}
+
+.searchHeader__inner {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  background: #4391CF;
+  text-align: center;
+  height: 40vh;
+}
+
+.searchHeader__button-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.searchHeader__title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.searchMain__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  background: #4391CF;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+.searchMain__progress {
+  background: #4391CF;
+  border: 2px solid #FFFFFF;
+  border-radius: 15px;
+  border-radius: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 500px;
+  text-align: center;
+}
+
+.searchMain__progress-value {
+  -webkit-animation: load 3s normal forwards;
+          animation: load 3s normal forwards;
+  border-radius: 100px;
+  background: #fff;
+  height: 30px;
+  width: 0;
+}
+
+@-webkit-keyframes load {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 99%;
+  }
+}
+
+@keyframes load {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 99%;
+  }
+}
+
+.searchButton {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  background: rgba(85, 182, 165, 0.5);
+  border-radius: 15px;
+  border: none;
+  padding: 27px 119px;
+}
+
+.sensorDataHeader__inner {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  background: #4391CF;
+  text-align: center;
+  height: 20vh;
+}
+
+.sensorDataHeader__button-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.sensorDataMain__inner {
+  height: 100%;
+  background: #4391CF;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 80vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sensorData__button {
+  background: #ffffff;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  border: none;
+}
+
+.sensorData-button {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  background: rgba(85, 182, 165, 0.5);
+  border-radius: 15px;
+  border: none;
+  padding: 27px 119px;
 }
 
 .webp .dropDown__item { background: url(.webp), -o-radial-gradient(15.32% 21.04%, 90.16% 143.01%, rgba(85, 182, 165, 0.5) 0%, rgba(110, 191, 244, 0.111979) 77.08%, rgba(70, 144, 213, 0) 100%); }
