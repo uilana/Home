@@ -1105,8 +1105,8 @@ h3 {
 
 .sensorData__button-img {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 0px;
+  top: 0px;
 }
 
 .sensorData-type {
@@ -1121,12 +1121,23 @@ h3 {
 
 .sensorDataButton-container {
   position: relative;
+  margin: 30px;
+  background: #FFFF;
 }
 
 .sensorData__list {
   overflow: hidden;
   max-height: 0;
-  background: #000000;
+  background: #4391CF;
+  list-style-type: none;
+}
+
+.sensorData__list-text {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .sensorData {
@@ -1161,16 +1172,15 @@ h3 {
 }
 
 .sensorData__label {
-  background: #FFFFFF;
-}
-
-.sensorData__button {
-  background: #ffffff;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 28px;
+  text-align: center;
+}
+
+.sensorData__button {
   color: #000000;
   border: none;
 }
